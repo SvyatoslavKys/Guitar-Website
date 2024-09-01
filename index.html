@@ -15,11 +15,11 @@
         <header class="header">
            <nav class="container nav-cont">
             <img width="28px" height="28px" src="./image/Butterfly.png" alt="">
-            <a href="">Rhythm</a>
+            <a href="./index.html">Rhythm</a>
             <ul>
-                <li><a href="">Store</a></li>
-                <li><a href="">Collections</a></li>
-                <li><a href="">Support</a></li>
+                <li><a href="#store">Store</a></li>
+                <li><a href="#Choose-based">Collections</a></li>
+                <li><button type="button" class="Support-btn" data-modal-open >Support</button></li>
             </ul>   
             </nav>
        
@@ -39,7 +39,7 @@
         </section>
         <section>
             <div class="container check-out">
-                <h2 class="header-section">Check out the <span>Store</span></h2>
+                <h2 id="store" class="header-section">Check out the <span>Store</span></h2>
                 <div class="box-first">
                     <div class="view-block">
                     <h3>NEW ON THE BOARD</h3>
@@ -90,7 +90,7 @@
         </section>
         <section>
             <div class="container icon-guitar">
-            <h3 class="header-section">Choose based on <span>Categories</span></h3>
+            <h3 id="Choose-based" class="header-section">Choose based on <span>Categories</span></h3>
             <ul>
                 <li>
                     <img src="./image/icon guitar/Acoustic.png" alt="Acoustic">
@@ -191,16 +191,16 @@
                     <a href="">Rhythm</a>
                     </div>
                     <ul>
-                        <li class="mail-footer"><img width="24px" height="24px" src="./image/decor/sms.png" alt="convert"><a href="">  Enquiry@Rhythm.com</a></li>
-                        <li class="location-footer"><img width="24px" height="24px" src="./image/decor/location.png" alt="location"><a href=""> San Francisco</a></li>
+                        <li class="mail-footer"><img width="24px" height="24px" src="./image/decor/sms.png" alt="convert"><a href="Enquiry@Rhythm.com" type="email">  Enquiry@Rhythm.com</a></li>
+                        <li class="location-footer"><img width="24px" height="24px" src="./image/decor/location.png" alt="location"><a target="_blank" href="https://www.google.com/maps/place/Guitar+Center/@37.769562,-122.4708685,14z/data=!3m1!5s0x808580c0f64d7ea9:0x1b74d381615b9852!4m10!1m2!2m1!1sguitar+shop!3m6!1s0x808580eac8010259:0xf3d6c8aa957feb09!8m2!3d37.7907852!4d-122.4226827!15sCgtndWl0YXIgc2hvcFoNIgtndWl0YXIgc2hvcJIBC211c2ljX3N0b3Jl4AEA!16s%2Fg%2F1tkmmsn6?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D"> San Francisco</a></li>
                     </ul>
                 </div>
                 <div class="style-li-a">
                     <h class="footer-header">PAGES</h>
                     <ul>
-                        <li><a href="">Store</a></li>
-                        <li><a href="">Collections</a></li>
-                        <li><a href="">Support</a></li>
+                        <li><a href="#store">Store</a></li>
+                        <li><a href="#Choose-based">Collections</a></li>
+                        <li><a href="" data-modal-open >Support</a></li>
                     </ul>
                 </div>
                 <div class="style-li-a">
@@ -225,5 +225,25 @@
             </div>
         </footer>
     </main>
+    <div class="beckdrop  is-hidden" data-modal>
+        <div class="modal">
+           <button type="button" class="modal-close" data-modal-close>X</button>
+           <p class="modal-title">ask your question</p>
+           <p class="modal-discript" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+           <div class="input-box">
+            <p>fill out the form and send a message</p>
+           <form action="">
+            <div class="name-box">
+               <input type="text" placeholder="Name" class="form-input">
+               <input type="text" placeholder="Email" class="form-input">
+            </div>
+                <textarea name="" placeholder="wright a message" id="textarea" cols="30" rows="10"></textarea>
+               <button type="submit" class="button-send" >Send</button>
+           </form>
+        </div>
+        </div>
+        <script src="./modalSkrypt-1.js">
+        </script>
 </body>
+
 </html>
