@@ -2,9 +2,16 @@
 ul, p, h1, h2, h3, h4, h5, h6{
     margin: 0;
     padding: 0;
+    user-select: none;
 }
-html{scroll-behavior: smooth;}
+html{
+    scroll-behavior: smooth;
+    user-select: none;
+}
+button img{
+    user-select: none;
 
+}
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -13,6 +20,7 @@ html{scroll-behavior: smooth;}
 li, a{
     list-style: none;
     text-decoration: none;
+    user-select: none;
 }
 .header-section{
     text-align: center;
@@ -90,21 +98,25 @@ li, a{
     color: #FF6428;
     text-shadow: none;
 }
-.nav-cont>img{
-    margin-right: 12px;
-}
+
 .nav-cont>a{
+    display: flex;
     font-family: 'Cal Sans', sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height: 1.3;
     color: #121212;
+    text-align: center;
+
 
 
     margin-right: 131px;
     padding: 10px 0;
     transition: 500ms ease-in-out;
-
+}
+.nav-cont>a>svg{
+    margin: 0 20px 0 0;
+    cursor: pointer;
 }
 .nav-cont>a:hover{
     color: #FF6428;
@@ -169,7 +181,18 @@ li, a{
 .view-block>a{
     display: inline;
     margin-left: auto;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #666666;
 }
+.view-block>a:hover{
+    text-shadow: 0 20px 32px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+
 .box-first>div>ul>li>img{
     margin-bottom: 40px;
 }
@@ -202,8 +225,6 @@ li, a{
     font-weight: 400;
     line-height: 1.3;
     color: #666666;
-
-
 }
 /* -----------------------Choose based-------------------- */
 
@@ -224,8 +245,6 @@ li, a{
 }
 .icon-guitar>ul>li{
     position: relative;
-    
-   
 }
 .icon-guitar>ul>li>p{
     font-family: 'Poppins', sans-serif;
@@ -239,6 +258,27 @@ li, a{
     transform: translateX(-50%);
     z-index: 2;
 }
+.box-first>Ul>li{
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 500ms ease-in-out;
+}
+.box-first>Ul>li:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);;
+  
+}
+.box-second>Ul>li{
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 500ms ease-in-out;
+}
+.box-second>Ul>li:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);;
+  
+}
+
 /* -------------------------Featuring the--------------------------- */
 .featuring{
     padding: 0 90px;
@@ -246,9 +286,15 @@ li, a{
 }
 .Brand-box{
     display: flex;
-    gap: 160px;
+    gap: 115px 140px;
     flex-wrap: wrap;
     justify-content: center;
+}
+.Brand-box>li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
 }
 /* ------------------------Why-try section------------------------ */
 .Why-try{
@@ -276,10 +322,10 @@ li, a{
     align-items: center;
     justify-content: center;
 }
-.icon-box:hover{
+/* .icon-box:hover{
    background: red;
    border-radius: 20px;
-}
+} */
 .why-try-box>li>img{
     width: 32px;
     height: 32px;
@@ -394,7 +440,7 @@ li, a{
 [alt="apple store"]:hover{
     box-shadow:  0 20px 32px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-/* -----------------------futer-------------------------- */
+/* -----------------------footer-------------------------- */
 .footer-bg{
     background: #EEEEEE;
 }
@@ -428,7 +474,14 @@ li, a{
     line-height: 1.3;
     color: #121212;
     transition: 500ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.logo-footer>a>svg{
+    margin-right: 24px;
+}
+
 .logo-footer>a:hover{
     color: #FF6428;
     text-shadow: 0 20px 32px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -496,14 +549,15 @@ li, a{
     display: flex;
     gap: 32px;
 }
-.follow-us>li>a>img{
+.follow-us>li>a>svg{
     transition: 500ms ease-in-out;
     border-radius: 50%;
 
 }
-.follow-us>li>a>img:hover{
+.follow-us>li>a>svg:hover{
     box-shadow: 0 20px 32px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     border-radius: 50%;
+    background-color: #FF6428;
 }
 .footer-header{
     font-family: 'Poppins', sans-serif;
@@ -614,6 +668,7 @@ text-shadow: 0 20px 32px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     border-radius: 5px;
     margin-bottom: 10px;
     transition: 500ms ease-in-out;
+    padding: 10px;
 }
 .form-input:focus{
     box-shadow: 0 20px 32px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
